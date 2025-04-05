@@ -9,5 +9,10 @@
         <input type="text" name="somethingToSay" placeholder="Say something..." />
         <input type="submit" />
     </form>
+
+    <form th:action="@{/processForm2}" method="GET">
+        <input type="text" name="somethingToSay" placeholder="And say something again..." />
+        <input type="submit" />
+    </form>
 </body>
 </html>
