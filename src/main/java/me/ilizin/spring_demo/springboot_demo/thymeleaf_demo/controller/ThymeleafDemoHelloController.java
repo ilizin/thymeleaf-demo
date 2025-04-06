@@ -15,7 +15,8 @@ public class ThymeleafDemoHelloController {
         return "hello-form";
     }
 
-    // The controller method to process the form
+    /* The controller method to process the form.
+       This handles all HTTP methods: GET, POST, etc. Use method=RequestMethod.GET to restrict to only GET */
     @RequestMapping("/processForm")
     public String processForm(HttpServletRequest request, Model model) {
         // read the request parameter from the HTML form

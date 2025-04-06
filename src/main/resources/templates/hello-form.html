@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
 </head>
 <body>
+    <!-- if use the GET method, the form data is added to the end of URL as name/value pairs
+         url?field1=value1&field2=value2 -->
     <form th:action="@{/processForm}" method="GET">
         <input type="text" name="somethingToSay" placeholder="Say something..." />
         <input type="submit" />
     </form>
 
-    <form th:action="@{/processForm2}" method="GET">
+    <!-- From data is passed in the body of HTTP request message -->
+    <form th:action="@{/processForm2}" method="POST">
         <input type="text" name="somethingToSay" placeholder="And say something again..." />
         <input type="submit" />
     </form>
