@@ -2,8 +2,8 @@ package me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.model;
 
 public class Employee {
     private String name;
-
     private String surname;
+    private String country;
 
     public Employee() {
 
@@ -23,5 +23,13 @@ public class Employee {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 }
