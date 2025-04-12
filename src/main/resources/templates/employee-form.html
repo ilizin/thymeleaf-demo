@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thymeleaf demo - Employee form</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <h3>Employee registration form</h3>
+    <!-- employee is the name of the model attribute we set in the controller -->
+    <form th:action="@{/processEmployeeForm}" th:object="${employee}" method="POST">
+        <!-- *{name} is shortcut for ${employee.name} -->
+        <!-- When the form is submitted Spring MVC will create a new Employee instance
+             and add to the model, then call employee.setName(...) and employee.setSurName(...) methods -->
+        Name: <input type="text" th:field="*{name}" />
+        <br/>
+        Surname: <input type="text" th:field="*{surname}" />
+        <br/>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
