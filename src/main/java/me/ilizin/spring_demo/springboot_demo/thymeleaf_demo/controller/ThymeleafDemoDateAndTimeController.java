@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.time.LocalDateTime;
 
 @Controller
-public class ThymeleafDemoController {
+public class ThymeleafDemoDateAndTimeController {
 
     @GetMapping("/serverDateAndTime")
     public String getServerDateAndTime(Model model) {
