@@ -1,10 +1,13 @@
 package me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.model;
 
+import java.util.List;
+
 public class Employee {
     private String name;
     private String surname;
     private String country;
     private String favoriteLanguage;
+    private List<String> favoriteSystems;
 
     public Employee() {
 
@@ -40,5 +43,13 @@ public class Employee {
 
     public void setFavoriteLanguage(String favoriteLanguage) {
         this.favoriteLanguage = favoriteLanguage;
+    }
+
+    public List<String> getFavoriteSystems() {
+        return favoriteSystems;
+    }
+
+    public void setFavoriteSystems(List<String> favoriteSystems) {
+        this.favoriteSystems = favoriteSystems;
     }
 }

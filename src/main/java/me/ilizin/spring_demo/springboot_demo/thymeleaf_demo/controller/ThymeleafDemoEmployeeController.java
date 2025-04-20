@@ -20,6 +20,8 @@ public class ThymeleafDemoEmployeeController {
     private List<String> countries;
     @Value("${languages}")
     private List<String> languages;
+    @Value("${systems}")
+    private List<String> systems;
 
     @GetMapping("/showEmployeeForm")
     public String showEmployeeForm(Model model) {
@@ -27,6 +29,7 @@ public class ThymeleafDemoEmployeeController {
         model.addAttribute("employee", employee);
         model.addAttribute("countries", countries);
         model.addAttribute("languages", languages);
+        model.addAttribute("systems", systems);
         return "employee-form";
     }
 
