@@ -2,15 +2,26 @@ package me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.controller;
 
 import jakarta.validation.Valid;
 import me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.model.Customer;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class ThymeleafDemoCustomerController {
+
+    // Pre-process every String form data
+    @InitBinder
+    public void initBinder(WebDataBinder webDataBinder) {
+        // Removes whitespaces leading and trailing, true parameter means trim empty string to null
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        webDataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
 
     @GetMapping("/showCustomerForm")
     // The Model allows to share information between Controllers and view pages (Thymeleaf)
