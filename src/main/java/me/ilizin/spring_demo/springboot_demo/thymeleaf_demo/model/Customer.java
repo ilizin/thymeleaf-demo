@@ -1,6 +1,7 @@
 package me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.model;
 
 import jakarta.validation.constraints.*;
+import me.ilizin.spring_demo.springboot_demo.thymeleaf_demo.validation.CourseCode;
 
 public class Customer {
 
@@ -19,6 +20,11 @@ public class Customer {
 
     @Pattern(regexp = "^[a-zA-Z0-9]{5}", message = "only five chars/digits")
     private String postalCode;
+
+    /* Both are the same since our annotation has support for default
+      @CourseCode(value="LUV", message="must start with LUV") */
+    @CourseCode
+    private String courseCode;
 
     public String getFirstName() {
         return firstName;
@@ -50,5 +56,13 @@ public class Customer {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 }
