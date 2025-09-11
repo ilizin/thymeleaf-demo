@@ -28,38 +28,38 @@ ilizin@ilizin /c
 
 3. Clone the repository:
 ```
-git clone git@github.com:ilizin/api-rest-demo.git
+git clone git@github.com:ilizin/thymeleaf-demo.git
 ```
 
 4. Run the <i>mvn clean install</i> command to run the tests and install the project:
 ```
-ilizin@ilizin:~/repos/api-rest-demo (main)
+ilizin@ilizin:~/repos/thymeleaf-demo (main)
 $ mvn clean install
 [INFO] Scanning for projects...
 [INFO]
-[INFO] ---------------< org.springframework.boot:api-rest-demo >---------------
-[INFO] Building api-rest-demo 0.0.1-SNAPSHOT
+[INFO] --------< me.ilizin.spring-demo.springboot-demo:thymeleaf-demo >--------
+[INFO] Building thymeleaf-demo 0.0.1-SNAPSHOT
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 ...
-[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 [INFO]
 [INFO]
-[INFO] --- jar:3.4.2:jar (default-jar) @ api-rest-demo ---
-[INFO] Building jar: C:\ilio\repos\api-rest-demo\target\api-rest-demo-0.0.1-SNAPSHOT.jar
+[INFO] --- jar:3.4.2:jar (default-jar) @ thymeleaf-demo ---
+[INFO] Building jar: C:\ilio\repos\thymeleaf-demo\target\thymeleaf-demo-0.0.1-SNAPSHOT.jar
 [INFO]
-[INFO] --- spring-boot:3.4.1:repackage (repackage) @ api-rest-demo ---
-[INFO] Replacing main artifact C:\ilio\repos\api-rest-demo\target\api-rest-demo-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
-[INFO] The original artifact has been renamed to C:\ilio\repos\api-rest-demo\target\api-rest-demo-0.0.1-SNAPSHOT.jar.original
+[INFO] --- spring-boot:3.4.1:repackage (repackage) @ thymeleaf-demo ---
+[INFO] Replacing main artifact C:\ilio\repos\thymeleaf-demo\target\thymeleaf-demo-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\ilio\repos\thymeleaf-demo\target\thymeleaf-demo-0.0.1-SNAPSHOT.jar.original
 [INFO]
-[INFO] --- install:3.1.3:install (default-install) @ api-rest-demo ---
-[INFO] Installing C:\ilio\repos\api-rest-demo\pom.xml to C:\Users\ilio.zincone\.m2\repository\org\springframework\boot\api-rest-demo\0.0.1-SNAPSHOT\api-rest-demo-0.0.1-SNAPSHOT.pom
-[INFO] Installing C:\ilio\repos\api-rest-demo\target\api-rest-demo-0.0.1-SNAPSHOT.jar to C:\Users\ilio.zincone\.m2\repository\org\springframework\boot\api-rest-demo\0.0.1-SNAPSHOT\api-rest-demo-0.0.1-SNAPSHOT.jar
+[INFO] --- install:3.1.3:install (default-install) @ thymeleaf-demo ---
+[INFO] Installing C:\ilio\repos\thymeleaf-demo\pom.xml to C:\Users\ilio.zincone\.m2\repository\me\ilizin\spring-demo\springboot-demo\thymeleaf-demo\0.0.1-SNAPSHOT\thymeleaf-demo-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\ilio\repos\thymeleaf-demo\target\thymeleaf-demo-0.0.1-SNAPSHOT.jar to C:\Users\ilio.zincone\.m2\repository\me\ilizin\spring-demo\springboot-demo\thymeleaf-demo\0.0.1-SNAPSHOT\thymeleaf-demo-0.0.1-SNAPSHOT.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  20.041 s
-[INFO] Finished at: 2025-08-24T20:04:25+02:00
+[INFO] Total time:  36.792 s
+[INFO] Finished at: 2025-09-11T19:45:03+02:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -69,13 +69,13 @@ $ mvn clean install
 2. Run the <i>mvn spring-boot:run</i> command to start it.
 3. Validate the console shows a message indicating the project is up and running:
 ```
-ilizin@ilizin:~/repos/api-rest-demo$ mvn spring-boot:run
+ilizin@ilizin:~/repos/thymeleaf-demo$ mvn spring-boot:run
 [INFO] Scanning for projects...
 ....
-2025-04-20T08:30:39.687+02:00  INFO 22208 --- [api-rest-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/api-rest-demo'
-2025-04-20T08:30:39.703+02:00  INFO 22208 --- [api-rest-demo] [           main] m.i.s.s.a.ApiRestDemoApplication         : Started ApiRestDemoApplication in 3.639 seconds (process running for 4.322)
+2025-09-11T19:49:24.225+02:00  INFO 26024 --- [thymeleaf-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-11T19:49:24.234+02:00  INFO 26024 --- [thymeleaf-demo] [           main] m.i.s.s.t.ThymeleafDemoApplication       : Started ThymeleafDemoApplication in 1.903 seconds (process running for 2.216)
 ```
-4. Access the swagger UI page from the link: http://localhost:8081/api-rest-demo/swagger-ui/index.html
+4. Access the swagger UI page from the link: 
 
 ## Structure
 
@@ -96,19 +96,4 @@ Contributions are welcome! If you have an alternative solution or an improvement
 GitHub: [ilizin](https://github.com/ilizin)
 
 ## References
-
-* Mauro Saita. (Unknown). *Algoritmo di Erone.* <br/>
-  Retrieved from http://maurosaita.it/05quinta/matematica/appunti/algoritmo_di_Erone.pdf
-* Spring documentation. (Unknown). *Testing the Web Layer.* <br/>
-  Retrieved from https://spring.io/guides/gs/testing-web
-* Akbar Karimi. (Unknown). *Fastest Algorithm to Find Prime Numbers.* <br/>
-  Retrieved from https://www.baeldung.com/cs/prime-number-algorithms
-* Spring documentation. (Unknown). *Controller Advice.* <br/>
-  Retrieved from https://docs.spring.io/spring-framework/reference/web/webflux/controller/ann-advice.html
-* Spring documentation. (Unknown). *Exceptions.* <br/>
-  Retrieved from https://docs.spring.io/spring-framework/reference/web/webflux/controller/ann-exceptions.html
-* Abhinav Pandey. (11-05-2024). *Setting Example and Description with Swagger.* <br/>
-  Retrieved from https://www.baeldung.com/swagger-set-example-description
-* Sampada Wagde. (01-08-2024). *Spring REST Docs vs OpenAPI.* <br/>
-  Retrieved from https://www.baeldung.com/spring-rest-docs-vs-openapi
   
