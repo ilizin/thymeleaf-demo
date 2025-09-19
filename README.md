@@ -94,6 +94,4 @@ Contributions are welcome! If you have an alternative solution or an improvement
 ## Contact
 
 GitHub: [ilizin](https://github.com/ilizin)
-
-## References
   
