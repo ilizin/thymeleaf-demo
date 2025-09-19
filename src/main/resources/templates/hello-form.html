@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+    <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Thymeleaf demo - Hello form</title>
@@ -11,7 +11,7 @@
         <input type="text" name="somethingToSay" placeholder="Say something..." />
         <input type="submit" />
     </form>
-
+    </br>
     <!-- From data is passed in the body of HTTP request message -->
     <form th:action="@{/processForm2}" method="POST">
         <input type="text" name="somethingToSay" placeholder="And say something again..." />

@@ -12,9 +12,9 @@
         <!-- When the form is submitted Spring MVC will create a new Employee instance
              and add to the model, then call employee.setName(...) and employee.setSurName(...) methods -->
         Name: <input type="text" th:field="*{name}" />
-        <br/>
+        <br/><br/>
         Surname: <input type="text" th:field="*{surname}" />
-        <br/>
+        <br/><br/>
         Country:
         <select th:field="*{country}">
             <!-- Loop over the list of countries
@@ -22,7 +22,7 @@
                  th:text is text displayed to the user -->
             <option th:each="tempCountry : ${countries}" th:value="${tempCountry}" th:text="${tempCountry}"></option>
         </select>
-        <br/>
+        <br/><br/>
         Favorite programming language:
         <!-- th:field... binding to property on Employee object
              th:value... value sent during form submission -->
@@ -30,13 +30,13 @@
                             th:each="tempLanguage : ${languages}"
                             th:value="${tempLanguage}"
                             th:text="${tempLanguage}"/>
-        <br/>
+        <br/><br/>
         Favorite operating systems:
         <input type="checkbox"  th:field="*{favoriteSystems}"
                                 th:each="tempSystem : ${systems}"
                                 th:value="${tempSystem}"
                                 th:text="${tempSystem}"></input>
-        <br/>
+        <br/><br/>
         <input type="submit" value="Submit" />
     </form>
 </body>

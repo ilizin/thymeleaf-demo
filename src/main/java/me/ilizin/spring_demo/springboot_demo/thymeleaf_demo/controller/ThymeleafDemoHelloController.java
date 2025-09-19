@@ -25,7 +25,6 @@ public class ThymeleafDemoHelloController {
         // read the request parameter from the HTML form
         String something = request.getParameter("somethingToSay");
         model.addAttribute("somethingToSayInUppercase", something.toUpperCase());
-
         return "hello";
     }
 
