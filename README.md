@@ -1,5 +1,22 @@
 # thymeleaf-demo
 
+This demo project shows how easy is to build a web applications with springboot and thymeleaf.
+
+Springboot is full of properties and annotations, find this code fully commented to document how to use a bunch of them.
+
+**Annotations:** @Controller, @InitBinder, @GetMapping, @PostMapping, @Valid, @ModelAttribute, @Value, @RequestMapping,
+@SpringBootApplication
+
+Thymeleaf is a Java library. It is an XML/XHTML/HTML5 template engine able to apply a set of transformations to template files in order to display data and/or text produced by your applications.
+It is better suited for serving XHTML/HTML5 in web applications, but it can process any XML file, be it in web or in standalone applications.
+Thymeleaf can be integrated with the Spring Framework, especially (but not only) Spring MVC.
+
+Thymeleaf is full of tags, find this code fully commented to document how to use a bunch of them.
+
+**Thymeleaf tags:** th:text, th:action, th:object, th:field, th:if, th:errors, th:each, th:value, th:href
+
+This demo project goal is just didactic, so I encourage you to read the code, read all the comments, and learn from it.
+
 ## Description
 
 ## Installation
