@@ -19,6 +19,13 @@ This demo project goal is just didactic, so I encourage you to read the code, re
 
 ## Description
 
+This demo includes four controllers
+
+* ThymeleafDemoCustomerController
+* ThymeleafDemoDateAndTimeController
+* ThymeleafDemoEmployeeController
+* ThymeleafDemoHelloController
+
 ## Installation
 
 1. The project is based on spring boot <i>v3.4.1</i>, so make sure you have installed at least the required *jdk17*:
@@ -92,7 +99,12 @@ ilizin@ilizin:~/repos/thymeleaf-demo$ mvn spring-boot:run
 2025-09-11T19:49:24.225+02:00  INFO 26024 --- [thymeleaf-demo] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2025-09-11T19:49:24.234+02:00  INFO 26024 --- [thymeleaf-demo] [           main] m.i.s.s.t.ThymeleafDemoApplication       : Started ThymeleafDemoApplication in 1.903 seconds (process running for 2.216)
 ```
-4. Access the swagger UI page from the link: 
+4. Access the application from the following four links:
+
+* http://localhost:8080/showForm
+* http://localhost:8080/showEmployeeForm
+* http://localhost:8080/serverDateAndTime
+* http://localhost:8080/showCustomerForm
 
 ## Structure
 
