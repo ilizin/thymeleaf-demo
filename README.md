@@ -2,7 +2,7 @@
 
 This demo project shows how easy is to build a web applications with springboot and thymeleaf.
 
-Springboot is full of properties and annotations, find this code fully commented to document how to use a bunch of them.
+Springboot is full of properties and annotations, this code is fully commented to explain how to use a bunch of them.
 
 **Annotations:** @Controller, @InitBinder, @GetMapping, @PostMapping, @Valid, @ModelAttribute, @Value, @RequestMapping,
 @SpringBootApplication
@@ -15,16 +15,19 @@ Thymeleaf is full of tags, find this code fully commented to document how to use
 
 **Thymeleaf tags:** th:text, th:action, th:object, th:field, th:if, th:errors, th:each, th:value, th:href
 
-This demo project goal is just didactic, so I encourage you to read the code, read all the comments, and learn from it.
+This demo project goal is just didactic, so I encourage you to read the code, the comments, and learn from it.
 
 ## Description
 
 This demo includes four controllers
 
-* ThymeleafDemoCustomerController
-* ThymeleafDemoDateAndTimeController
-* ThymeleafDemoEmployeeController
-* ThymeleafDemoHelloController
+ThymeleafDemoCustomerController
+
+ThymeleafDemoDateAndTimeController
+
+ThymeleafDemoEmployeeController
+
+ThymeleafDemoHelloController
 
 ## Installation
 
