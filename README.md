@@ -40,8 +40,7 @@ OpenJDK 64-Bit Server VM (build 17.0.2+8-86, mixed mode, sharing)
 ilizin@ilizin:~$ 
 ```
 
-2. Make sure you've installed the apache maven, or refer to the official page [Install Maven](https://maven.apache.org/install.html)
-to install it.
+2. Make sure you've installed the apache maven, or refer to the official page [Install Maven](https://maven.apache.org/install.html) to install it.
 ```
 ilizin@ilizin /c
 $ mvn -v
@@ -94,7 +93,7 @@ $ mvn clean install
 
 1. Have the project installed on your machine, see [Installation](#installation)
 2. Run the <i>mvn spring-boot:run</i> command to start it.
-3. Validate the console shows a message indicating the project is up and running:
+3. Validate the project is up and running:
 ```
 ilizin@ilizin:~/repos/thymeleaf-demo$ mvn spring-boot:run
 [INFO] Scanning for projects...
